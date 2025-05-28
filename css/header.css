@@ -129,6 +129,7 @@
     left: 0;
     background-color: #003366;
     min-width: 250px;
+    max-width: 90vw; /* Limit width on small screens */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     border-radius: 0 0 8px 8px;
     padding: 0.5rem 0;
@@ -140,6 +141,12 @@
     border-top: 2px solid #FFC700;
     max-height: 70vh;
     overflow-y: auto;
+}
+
+/* Right-align dropdown menus that would overflow the viewport */
+.header .main-nav li:nth-last-child(-n+2) .dropdown {
+    left: auto;
+    right: 0;
 }
 
 /* Show dropdown when parent has active class */
@@ -155,15 +162,19 @@
 .header .main-nav .dropdown.cities {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    min-width: 450px;
+    min-width: 300px;
+    max-width: 90vw;
     padding: 1rem;
+    box-sizing: border-box;
 }
 
 .header .main-nav .dropdown.jails {
-    min-width: 350px;
+    min-width: 300px;
+    max-width: 90vw;
     padding: 0.75rem 0;
     max-height: 75vh;
     overflow-y: auto;
+    box-sizing: border-box;
 }
 
 .header .main-nav .has-dropdown:hover .dropdown {
@@ -277,6 +288,25 @@
 }
 
 @media (max-width: 992px) {
+    /* Fix dropdown position on mobile */
+    .header .main-nav li .dropdown {
+        width: 95vw;
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto;
+    }
+    
+    .header .main-nav .dropdown.cities,
+    .header .main-nav .dropdown.jails {
+        width: 95vw;
+        max-width: 95vw;
+        min-width: auto;
+    }
+    
+    .header .main-nav .dropdown.cities {
+        grid-template-columns: 1fr;
+    }
+
     /* Fix dropdown positioning */
     .header .main-nav .dropdown {
         position: static;
@@ -552,33 +582,4 @@
     }
 
 
-/* Mobile-specific styling for elements inside the media query */
-@media (max-width: 992px) {
-    .header .main-nav > ul > li > a {
-        padding: 1.2rem 0;
-        font-size: 1.15rem;
-    }
-
-    .header .main-nav .dropdown {
-        background-color: #002244;
-        color: #fff;
-        border-radius: 8px;
-        margin-left: 0;
-        box-shadow: 0 8px 24px rgba(0,0,0,0.18);
-    }
-
-    .header .main-nav .dropdown a {
-        color: #fff;
-        font-size: 1.08rem;
-        padding: 1rem 1.5rem;
-    }
-
-    .header .main-nav .dropdown a:hover {
-        background: #003366;
-        color: #FFC700;
-    }
-
-    .header .main-nav .has-dropdown > a {
-        font-size: 1.15rem;
-    }
-}
+/* This section intentionally left blank to remove duplicate media query */
