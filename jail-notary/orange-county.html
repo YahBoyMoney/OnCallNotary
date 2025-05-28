@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange County Jail Notary Services – Mobile Notary for Inmates</title>
+    <meta name="description" content="Professional mobile notary services for inmates at Orange County jails including Theo Lacy Facility, Central Men's Jail, Central Women's Jail, and Intake Release Center. Call (909) 751-8439 for fast inmate notary service.">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!-- Google Analytics placeholder -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
+    <!-- JSON-LD for LocalBusiness and Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "On Call Notary - Orange County Jail Notary Services",
+      "image": "https://oncallnotarysb.com/images/logo.png",
+      "@id": "https://oncallnotarysb.com/jail-notary/orange-county.html",
+      "url": "https://oncallnotarysb.com/jail-notary/orange-county.html",
+      "telephone": "+19097518439",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Mobile Service",
+        "addressLocality": "Santa Ana",
+        "addressRegion": "CA",
+        "postalCode": "92701",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "County",
+        "name": "Orange County",
+        "sameAs": "https://en.wikipedia.org/wiki/Orange_County,_California"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "serviceOffer": {
+        "@type": "Service",
+        "name": "Orange County Jail Notary Services",
+        "description": "Mobile notary services for inmates at all Orange County detention facilities, including Theo Lacy Facility, Central Men's Jail, Central Women's Jail, and Intake Release Center.",
+        "areaServed": "Orange County, CA",
+        "provider": {"@type": "LegalService", "name": "On Call Notary"}
+      },
+      "sameAs": [
+        "https://www.facebook.com/oncallnotarysb",
+        "https://www.instagram.com/oncallnotarysb"
+      ]
+    }
+    </script>
+    
+    <style>
+        /* Additional styles for jail facility pages */
+        .facility-hero {
+            background: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.85)), url('../images/orange-county-jails.jpg') center/cover no-repeat;
+            padding: calc(var(--space-unit) * 14) 0 calc(var(--space-unit) * 8);
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .facility-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: calc(var(--space-unit) * 2);
+            font-weight: 700;
+        }
+        
+        .facility-hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto calc(var(--space-unit) * 4);
+            opacity: 0.9;
+        }
+        
+        .jail-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: calc(var(--space-unit) * 4);
+            margin-top: calc(var(--space-unit) * 4);
+        }
+        
+        .jail-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            padding: calc(var(--space-unit) * 4);
+        }
+        
+        .jail-card h3 {
+            color: var(--primary-color);
+            margin-bottom: calc(var(--space-unit) * 2);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: calc(var(--space-unit));
+            font-size: 1.5rem;
+        }
+        
+        .jail-card h3 i {
+            color: var(--accent-color);
+        }
+        
+        .jail-card p {
+            color: var(--gray-700);
+            line-height: 1.7;
+            margin-bottom: calc(var(--space-unit) * 2);
+        }
+        
+        .jail-info {
+            display: flex;
+            flex-direction: column;
+            gap: calc(var(--space-unit) * 2);
+            margin-bottom: calc(var(--space-unit) * 3);
+        }
+        
+        .jail-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: calc(var(--space-unit) * 2);
+        }
+        
+        .jail-info-item i {
+            color: var(--accent-color);
+            margin-top: 5px;
+        }
+        
+        .jail-info-content h4 {
+            margin-bottom: calc(var(--space-unit));
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .jail-info-content p {
+            margin-bottom: calc(var(--space-unit));
+        }
+        
+        .document-examples {
+            padding: calc(var(--space-unit) * 6) 0;
+            background-color: var(--gray-100);
+        }
+        
+        .document-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: calc(var(--space-unit) * 3);
+        }
+        
+        .document-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            padding: calc(var(--space-unit) * 3);
+            transition: transform 0.3s ease;
+        }
+        
+        .document-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .document-card h3 {
+            color: var(--primary-color);
+            margin-bottom: calc(var(--space-unit) * 2);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: calc(var(--space-unit));
+        }
+        
+        .document-card h3 i {
+            color: var(--accent-color);
+        }
+        
+        .document-card p {
+            color: var(--gray-700);
+            line-height: 1.7;
+        }
+        
+        @media (min-width: 768px) {
+            .jail-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <h1>On Call Notary</h1>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../services.html">Services</a></li>
+                    <li><a href="../areas-served.html">Areas We Serve</a></li>
+                    <li><a href="index.html">Jail Notary</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Facility Hero Section -->
+    <section class="facility-hero">
+        <div class="container">
+            <h1>Orange County Jail Notary Services</h1>
+            <p>Professional mobile notary services for inmates at all Orange County detention facilities. We come directly to the jail for all your notarization needs.</p>
+            <div class="hero-buttons">
+                <a href="tel:+19097518439" class="btn btn-primary" onclick="gtag('event', 'call_button_click');"><i class="fas fa-phone"></i> Call or Text (909) 751-8439</a>
+                <a href="../contact.html" class="btn btn-outline-light">Schedule Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Orange County Jail Notary Services</h2>
+            <p class="section-subtitle text-center mb-5">We provide professional notary services at all Orange County detention facilities, ensuring your documents are properly executed even when your loved one is incarcerated.</p>
+            
+            <div class="content-block">
+                <p>Orange County operates several detention facilities that house thousands of inmates throughout the county. Each facility has specific protocols for notary services, and our experienced team is familiar with all of them.</p>
+                <p>Our mobile notary service travels to all Orange County detention centers, providing professional notarization for various documents including powers of attorney, real estate documents, custody arrangements, and more. We understand the urgency often associated with these documents and strive to schedule appointments promptly.</p>
+                <p>All of our notaries are commissioned by the State of California and maintain thorough records of all notarizations in compliance with state regulations. We bring all necessary supplies, including our official seal, journal, and pens, ensuring a complete and legally valid notarization every time.</p>
+            </div>
+            
+            <div class="jail-cards">
+                <div class="jail-card">
+                    <h3><i class="fas fa-building"></i> Theo Lacy Facility</h3>
+                    <p>Located in Orange, Theo Lacy Facility is the largest jail facility in Orange County, housing both sentenced and pre-trial inmates. This modern facility handles a large portion of the county's inmate population.</p>
+                    
+                    <div class="jail-info">
+                        <div class="jail-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="jail-info-content">
+                                <h4>Location</h4>
+                                <p>501 The City Drive South, Orange, CA 92868</p>
+                            </div>
+                        </div>
+                        
+                        <div class="jail-info-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="jail-info-content">
+                                <h4>Visiting Information</h4>
+                                <p>Visits must be scheduled in advance through the Orange County Sheriff's Department website or by calling (714) 935-6175. For notary services, we typically enter as professional visitors and are familiar with the facility's protocols for document signing.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="jail-info-item">
+                            <i class="fas fa-file-signature"></i>
+                            <div class="jail-info-content">
+                                <h4>Our Approach</h4>
+                                <p>Due to the size of this facility, we recommend scheduling notary services at least 24-48 hours in advance when possible. We're experienced with the specific security procedures at Theo Lacy and can navigate them efficiently to ensure your documents are properly notarized.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="jail-card">
+                    <h3><i class="fas fa-building"></i> Central Jail Complex (Men's, Women's & IRC)</h3>
+                    <p>Located in Santa Ana, the Central Jail Complex includes the Central Men's Jail, Central Women's Jail, and the Intake Release Center (IRC), housing inmates of various security classifications.</p>
+                    
+                    <div class="jail-info">
+                        <div class="jail-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="jail-info-content">
+                                <h4>Location</h4>
+                                <p>550 N. Flower Street, Santa Ana, CA 92703</p>
+                            </div>
+                        </div>
+                        
+                        <div class="jail-info-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="jail-info-content">
+                                <h4>Visiting Information</h4>
+                                <p>Visits must be scheduled in advance through the Orange County Sheriff's Department. Each facility within the complex has its own visiting schedule and protocols. For notary services, we typically enter as professional visitors and are familiar with the procedures for document signing at each facility.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="jail-info-item">
+                            <i class="fas fa-file-signature"></i>
+                            <div class="jail-info-content">
+                                <h4>Our Approach</h4>
+                                <p>The Central Jail Complex has specific procedures for notary visits, which can vary slightly between the men's and women's facilities. We're experienced with these nuances and can navigate them efficiently to ensure a smooth notarization process.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="jail-card">
+                    <h3><i class="fas fa-building"></i> James A. Musick Facility</h3>
+                    <p>Located between Irvine and Lake Forest, the James A. Musick Facility is a minimum-security facility currently undergoing expansion. This facility typically houses inmates with shorter sentences or lower security classifications.</p>
+                    
+                    <div class="jail-info">
+                        <div class="jail-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="jail-info-content">
+                                <h4>Location</h4>
+                                <p>13502 Musick Road, Irvine, CA 92618</p>
+                            </div>
+                        </div>
+                        
+                        <div class="jail-info-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="jail-info-content">
+                                <h4>Visiting Information</h4>
+                                <p>Visits must be scheduled in advance through the Orange County Sheriff's Department. For notary services, advance scheduling is essential. Note that this facility's capacity and operations have been changing during its expansion project, so current protocols may vary.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="jail-info-item">
+                            <i class="fas fa-file-signature"></i>
+                            <div class="jail-info-content">
+                                <h4>Our Approach</h4>
+                                <p>Due to the changing nature of this facility during its expansion, we stay current with their latest procedures. The notarization process at this minimum-security facility is often more straightforward than at the larger complexes, but we still ensure all security protocols are followed precisely.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="jail-card">
+                    <h3><i class="fas fa-building"></i> City Jails & Temporary Holding Facilities</h3>
+                    <p>Orange County has numerous city jails operated by local police departments, which typically hold arrestees for shorter periods before transfer to county facilities. We can often provide notary services at these locations as well.</p>
+                    
+                    <div class="jail-info">
+                        <div class="jail-info-item">
+                            <i class="fas fa-info-circle"></i>
+                            <div class="jail-info-content">
+                                <h4>City Jails</h4>
+                                <p>Cities including Anaheim, Costa Mesa, Fullerton, Huntington Beach, and Newport Beach operate their own jails. Each has its own protocols, but our experienced notaries are familiar with the requirements at these locations.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="jail-info-item">
+                            <i class="fas fa-file-signature"></i>
+                            <div class="jail-info-content">
+                                <h4>Our Approach</h4>
+                                <p>For city jails, the notarization process often requires coordination with the specific police department. We're experienced in working with these local facilities and can often arrange notary services with shorter notice than at the larger county facilities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Document Examples Section -->
+    <section class="document-examples">
+        <div class="container">
+            <h2 class="section-title text-center">Documents We Notarize at Orange County Jails</h2>
+            <p class="section-subtitle text-center mb-5">Common documents we notarize for inmates at Orange County detention facilities include:</p>
+            
+            <div class="document-cards">
+                <div class="document-card">
+                    <h3><i class="fas fa-file-contract"></i> Powers of Attorney</h3>
+                    <p>General, limited, and durable powers of attorney allowing designated individuals to handle specific matters while the inmate is incarcerated. These documents are essential for ensuring someone can legally manage affairs during incarceration.</p>
+                </div>
+                
+                <div class="document-card">
+                    <h3><i class="fas fa-home"></i> Real Estate Documents</h3>
+                    <p>Property deeds, mortgage documents, refinancing agreements, and property transfers requiring notarized signatures. With Orange County's high property values, these documents often need timely processing to prevent financial complications.</p>
+                </div>
+                
+                <div class="document-card">
+                    <h3><i class="fas fa-child"></i> Child Custody Documents</h3>
+                    <p>Temporary guardianship forms, custody agreements, and consent forms for minor children. These documents ensure children's needs can be legally addressed by designated caregivers during the parent's incarceration.</p>
+                </div>
+                
+                <div class="document-card">
+                    <h3><i class="fas fa-briefcase"></i> Business Documents</h3>
+                    <p>Business ownership transfers, corporate resolutions, partnership agreements, and other business-related documents. Orange County's diverse business environment often requires these documents to be processed without delay despite incarceration.</p>
+                </div>
+                
+                <div class="document-card">
+                    <h3><i class="fas fa-hand-holding-usd"></i> Financial Authorizations</h3>
+                    <p>Bank account access authorizations, financial power of attorney forms, and other documents allowing designated individuals to manage financial affairs. These ensure bills continue to be paid and financial obligations are met during incarceration.</p>
+                </div>
+                
+                <div class="document-card">
+                    <h3><i class="fas fa-gavel"></i> Legal Affidavits</h3>
+                    <p>Sworn statements and affidavits for legal proceedings, including those related to the inmate's case or other civil matters. These documents often have strict requirements for notarization to be considered valid in court proceedings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Our Orange County Jail Notary Process</h2>
+            <p class="section-subtitle text-center mb-5">We've streamlined the process of getting documents notarized for inmates in Orange County's jail system:</p>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Initial Consultation</h3>
+                        <p>Call us at (909) 751-8439 to discuss your specific needs and the facility where your loved one is located. We'll explain the process and any facility-specific requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Verification</h3>
+                        <p>We'll help you verify the inmate's exact location using the Orange County inmate locator system if needed, as inmates are sometimes transferred between facilities.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Document Preparation</h3>
+                        <p>We'll guide you on document preparation and requirements. For many document types, we can provide templates or guidance on proper formatting.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Scheduling</h3>
+                        <p>We'll coordinate with the detention facility to schedule an appointment for the notarization, working within their visitation protocols and hours.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>On-Site Notarization</h3>
+                        <p>Our notary will meet with the inmate at the scheduled time, verify their identity, and complete the notarization process in compliance with California notary law.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Document Delivery</h3>
+                        <p>After notarization, we can either provide the documents to a designated family member, arrange for secure delivery, or handle filing if required.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">What Our Clients Say</h2>
+            <p class="section-subtitle text-center mb-5">Read testimonials from clients who have used our notary services at Orange County detention facilities:</p>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p>"When my son was at Theo Lacy, we needed urgent documents notarized for his property. On Call Notary was exceptional - they scheduled quickly, navigated the facility's procedures perfectly, and made a stressful situation much easier. They explained everything clearly and ensured all documents were properly executed. I'm so grateful for their professional service and would recommend them to anyone with a loved one in an Orange County jail."</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-image">
+                        <img src="../images/testimonial-4.jpg" alt="Richard T., Irvine" loading="lazy">
+                    </div>
+                    <div class="author-info">
+                        <h4>Richard T.</h4>
+                        <p>Irvine, CA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need a Notary at an Orange County Jail?</h2>
+                <p>Contact us today to schedule your jail notary service. We serve all Orange County detention facilities with professionalism and care.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+19097518439" class="btn btn-light" onclick="gtag('event', 'cta_call_click');"><i class="fas fa-phone"></i> Call or Text (909) 751-8439</a>
+                    <a href="../contact.html" class="btn btn-outline-light" onclick="gtag('event', 'cta_schedule_click');">Schedule Online</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>On Call Notary</h3>
+                    <p>Professional mobile notary services throughout Southern California, specializing in jail and correctional facility notarizations.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../services.html">Services</a></li>
+                        <li><a href="../areas-served.html">Areas We Serve</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                        <li><a href="index.html">Jail Notary Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+19097518439">(909) 751-8439</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@oncallnotarysb.com">info@oncallnotarysb.com</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Serving Southern California</p>
+                    <p><i class="fas fa-clock"></i> Available 24/7, 365 days a year</p>
+                </div>
+                <div class="footer-instagram">
+                    <h4>Follow Us on Instagram</h4>
+                    <div class="instagram-feed">
+                        <!-- Instagram feed will be loaded via JavaScript -->
+                        <div class="instagram-placeholder"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 On Call Notary. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="../privacy.html">Privacy Policy</a>
+                    <a href="../terms.html">Terms of Service</a>
+                    <a href="../sitemap.xml">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+19097518439" class="floating-call-btn">
+        <i class="fas fa-phone"></i>
+        <span>Call or Text</span>
+    </a>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

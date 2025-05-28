@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmate Notary Services for Southern California Jails | On Call Notary</title>
+    <meta name="description" content="Professional mobile notary services for inmates at all detention facilities in San Bernardino, Riverside, Los Angeles, and Orange Counties. Available 24/7 with fast response times. Call (909) 751-8439.">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!-- Google Analytics placeholder -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
+    <!-- JSON-LD for LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "On Call Notary - Inmate Notary Services",
+      "image": "https://oncallnotarysb.com/images/logo.png",
+      "@id": "https://oncallnotarysb.com/jail-notary/index.html",
+      "url": "https://oncallnotarysb.com/jail-notary/index.html",
+      "telephone": "+19097518439",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Mobile Service",
+        "addressLocality": "San Bernardino",
+        "addressRegion": "CA",
+        "postalCode": "92405",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        {
+          "@type": "County",
+          "name": "San Bernardino County"
+        },
+        {
+          "@type": "County",
+          "name": "Riverside County"
+        },
+        {
+          "@type": "County",
+          "name": "Los Angeles County"
+        },
+        {
+          "@type": "County",
+          "name": "Orange County"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "serviceOffer": {
+        "@type": "Service",
+        "name": "Inmate Notary Service",
+        "areaServed": ["Inland Empire, CA", "Los Angeles County, CA", "Orange County, CA"],
+        "provider": {"@type": "LegalService", "name": "On Call Notary"}
+      },
+      "sameAs": [
+        "https://www.facebook.com/oncallnotarysb",
+        "https://www.instagram.com/oncallnotarysb"
+      ] 
+    }
+    </script>
+    
+    <style>
+        /* Additional styles for jail notary pages */
+        .jail-hero {
+            background: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.85)), url('../images/jail-notary.jpg') center/cover no-repeat;
+            padding: calc(var(--space-unit) * 14) 0 calc(var(--space-unit) * 8);
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .jail-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: calc(var(--space-unit) * 2);
+            font-weight: 700;
+        }
+        
+        .jail-hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto calc(var(--space-unit) * 4);
+            opacity: 0.9;
+        }
+        
+        .county-section {
+            padding: calc(var(--space-unit) * 6) 0;
+        }
+        
+        .county-section:nth-child(even) {
+            background-color: var(--gray-100);
+        }
+        
+        .county-title {
+            color: var(--primary-color);
+            margin-bottom: calc(var(--space-unit) * 4);
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .jail-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: calc(var(--space-unit) * 3);
+        }
+        
+        .jail-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .jail-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .jail-card-image {
+            height: 180px;
+            overflow: hidden;
+        }
+        
+        .jail-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .jail-card:hover .jail-card-image img {
+            transform: scale(1.05);
+        }
+        
+        .jail-card-content {
+            padding: calc(var(--space-unit) * 3);
+        }
+        
+        .jail-card-content h3 {
+            color: var(--primary-color);
+            margin-bottom: calc(var(--space-unit) * 1.5);
+            font-weight: 600;
+        }
+        
+        .jail-card-content p {
+            color: var(--gray-700);
+            margin-bottom: calc(var(--space-unit) * 2);
+            line-height: 1.6;
+        }
+        
+        .jail-card-content .btn {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .jail-services {
+            padding: calc(var(--space-unit) * 6) 0;
+            background-color: var(--gray-100);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: calc(var(--space-unit) * 4);
+        }
+        
+        .service-item {
+            display: flex;
+            align-items: flex-start;
+            gap: calc(var(--space-unit) * 2);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            flex-shrink: 0;
+        }
+        
+        .service-content h3 {
+            color: var(--primary-color);
+            margin-bottom: calc(var(--space-unit) * 1);
+            font-weight: 600;
+        }
+        
+        .service-content p {
+            color: var(--gray-700);
+            line-height: 1.6;
+        }
+        
+        @media (min-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .services-grid {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <h1>On Call Notary</h1>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../services.html">Services</a></li>
+                    <li><a href="../areas-served.html">Areas We Serve</a></li>
+                    <li><a href="index.html" class="active">Jail Notary</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Jail Hero Section -->
+    <section class="jail-hero">
+        <div class="container">
+            <h1>Inmate Notary Services for Southern California Jails</h1>
+            <p>Professional mobile notary services for inmates at all detention facilities in San Bernardino, Riverside, Los Angeles, and Orange Counties.</p>
+            <div class="hero-buttons">
+                <a href="tel:+19097518439" class="btn btn-primary" onclick="gtag('event', 'call_button_click');"><i class="fas fa-phone"></i> Call or Text (909) 751-8439</a>
+                <a href="../contact.html" class="btn btn-outline-light">Schedule Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-content">
+                <p>We provide <strong>mobile notary services for inmates</strong> at all detention facilities in Southern California. Our experienced notary public comes directly to the jail to notarize documents with <strong>speed, discretion, and legal accuracy</strong>. Below you will find individual pages for each jail, including the facility's address, phone number, visiting guidelines, inmate resources, and examples of documents we can notarize for inmates. <strong>Call or Text (909) 751-8439 to schedule an inmate notary appointment.</strong></p>
+                <p>Each jail page is optimized with helpful information for families and attorneys. We've also included strong calls to action and trust-building content to assure you that your documents will be handled <strong>confidentially and correctly</strong>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- San Bernardino County Section -->
+    <section class="county-section">
+        <div class="container">
+            <h2 class="county-title">San Bernardino County Inmate Notary Services</h2>
+            <p class="text-center mb-5">We offer mobile notary services at all San Bernardino County jails, including the Central Detention Center, West Valley Detention Center, High Desert Detention Center, and Glen Helen Rehabilitation Center.</p>
+            
+            <div class="jail-cards">
+                <div class="jail-card">
+                    <div class="jail-card-image">
+                        <img src="../images/central-detention-center.jpg" alt="Central Detention Center in San Bernardino" loading="lazy">
+                    </div>
+                    <div class="jail-card-content">
+                        <h3>Central Detention Center</h3>
+                        <p>Located in downtown San Bernardino, we provide notary services for power of attorney, custody paperwork, vehicle releases, and more.</p>
+                        <a href="san-bernardino-county/central-detention-center.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="jail-card">
+                    <div class="jail-card-image">
+                        <img src="../images/west-valley-detention-center.jpg" alt="West Valley Detention Center in Rancho Cucamonga" loading="lazy">
+                    </div>
+                    <div class="jail-card-content">
+                        <h3>West Valley Detention Center</h3>
+                        <p>For inmates at WVDC in Rancho Cucamonga, we notarize real estate documents, legal settlements, financial POAs, and business forms.</p>
+                        <a href="san-bernardino-county/west-valley-detention-center.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="jail-card">
+                    <div class="jail-card-image">
+                        <img src="../images/high-desert-detention-center.jpg" alt="High Desert Detention Center in Adelanto" loading="lazy">
+                    </div>
+                    <div class="jail-card-content">
+                        <h3>High Desert Detention Center</h3>
+                        <p>We travel to Adelanto to notarize property deeds, affidavits of support, legal settlements, and medical consent forms.</p>
+                        <a href="san-bernardino-county/high-desert-detention-center.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="jail-card">
+                    <div class="jail-card-image">
+                        <img src="../images/glen-helen-rehabilitation-center.jpg" alt="Glen Helen Rehabilitation Center in Devore" loading="lazy">
+                    </div>
+                    <div class="jail-card-content">
+                        <h3>Glen Helen Rehabilitation Center</h3>
+                        <p>At GHRC in Devore, we notarize temporary guardianship agreements, work release documents, marriage licenses, and release forms.</p>
+                        <a href="san-bernardino-county/glen-helen-rehabilitation-center.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Riverside County Section -->
+    <section class="county-section">
+        <div class="container">
+            <h2 class="county-title">Riverside County Inmate Notary Services</h2>
+            <p class="text-center mb-5">We provide dedicated inmate notary services at all Riverside County jails, including Robert Presley Detention Center, Cois M. Byrd Detention Center, Larry D. Smith Correctional Facility, and John J. Benoit Detention Center.</p>
+            
+            <div class="jail-cards">
+                <div class="jail-card">
+                    <div class="jail-card-image">
+                        <img src="../images/riverside-county-jails.jpg" alt="Riverside County Jail Notary Services" loading="lazy">
+                    </div>
+                    <div class="jail-card-content">
+                        <h3>All Riverside County Jails</h3>
+                        <p>Professional mobile notary services for inmates at all Riverside County detention facilities. We're familiar with protocols at all facilities.</p>
+                        <a href="riverside-county/index.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="jail-card">
+                    <div class="jail-card-image">
+                        <img src="../images/robert-presley-detention-center.jpg" alt="Robert Presley Detention Center in Riverside" loading="lazy">
+                    </div>
+                    <div class="jail-card-content">
+                        <h3>Robert Presley Detention Center</h3>
+                        <p>For inmates at RPDC in downtown Riverside, we notarize legal documents, real estate transactions, and parental permission forms.</p>
+                        <a href="riverside-county/robert-presley-detention-center.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="jail-card">
+                    <div class="jail-card-image">
+                        <img src="../images/cois-byrd-detention-center.jpg" alt="Cois M. Byrd Detention Center in Murrieta" loading="lazy">
+                    </div>
+                    <div class="jail-card-content">
+                        <h3>Cois M. Byrd Detention Center</h3>
+                        <p>At the Southwest Detention Center in Murrieta, we provide notary services for real estate, family law, and business documents.</p>
+                        <a href="riverside-county/cois-byrd-detention-center.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="jail-card">
+                    <div class="jail-card-image">
+                        <img src="../images/larry-smith-correctional.jpg" alt="Larry D. Smith Correctional Facility in Banning" loading="lazy">
+                    </div>
+                    <div class="jail-card-content">
+                        <h3>Larry D. Smith Correctional Facility</h3>
+                        <p>We visit the Smith Correctional Facility in Banning to notarize important documents for inmates, including powers of attorney and property deeds.</p>
+                        <a href="riverside-county/larry-smith-correctional-facility.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="jail-card">
+                    <div class="jail-card-image">
+                        <img src="../images/john-benoit-detention-center.jpg" alt="John J. Benoit Detention Center (Indio Jail)" loading="lazy">
+                    </div>
+                    <div class="jail-card-content">
+                        <h3>John J. Benoit Detention Center</h3>
+                        <p>At the Indio Jail, we provide notary services for inmates needing to sign financial documents, custody arrangements, and legal affidavits.</p>
+                        <a href="riverside-county/john-benoit-detention-center.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Orange County Section -->
+    <section class="county-section">
+        <div class="container">
+            <h2 class="county-title">Orange County Inmate Notary Services</h2>
+            <p class="text-center mb-5">We provide professional notary services at Orange County jails, including the Theo Lacy Facility, Central Men's Jail, Central Women's Jail, and James A. Musick Facility.</p>
+            
+            <div class="jail-cards">
+                <div class="jail-card">
+                    <div class="jail-card-image">
+                        <img src="../images/orange-county-jails.jpg" alt="Orange County Jail Notary Services" loading="lazy">
+                    </div>
+                    <div class="jail-card-content">
+                        <h3>Orange County Jails</h3>
+                        <p>Professional mobile notary services for inmates at all Orange County detention facilities. We're experienced with the protocols at each facility.</p>
+                        <a href="orange-county.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Los Angeles County Section -->
+    <section class="county-section">
+        <div class="container">
+            <h2 class="county-title">Los Angeles County Inmate Notary Services</h2>
+            <p class="text-center mb-5">We offer mobile notary services at all Los Angeles County jails, including Men's Central Jail, Twin Towers Correctional Facility, Century Regional Detention Facility, and Pitchess Detention Center.</p>
+            
+            <div class="jail-cards">
+                <div class="jail-card">
+                    <div class="jail-card-image">
+                        <img src="../images/la-county-jails.jpg" alt="Los Angeles County Jail Notary Services" loading="lazy">
+                    </div>
+                    <div class="jail-card-content">
+                        <h3>Los Angeles County Jails</h3>
+                        <p>Professional mobile notary services for inmates at all Los Angeles County detention facilities. We're familiar with procedures at all LA County facilities.</p>
+                        <a href="los-angeles-county.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="jail-services">
+        <div class="container">
+            <h2 class="section-title text-center">Common Documents We Notarize at Jails</h2>
+            <p class="section-subtitle text-center mb-5">We handle a wide range of notary services for inmates, with a focus on legal accuracy and confidentiality.</p>
+            
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Power of Attorney</h3>
+                        <p>We notarize financial, medical, and general power of attorney documents allowing an inmate to designate someone to handle affairs while incarcerated.</p>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Child Custody Documents</h3>
+                        <p>Temporary guardianship forms, custody agreements, and parental consent documents for children's care while a parent is in custody.</p>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Vehicle Release Forms</h3>
+                        <p>Notarized authorization to release an impounded vehicle or transfer ownership of a vehicle while the owner is incarcerated.</p>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Real Estate Documents</h3>
+                        <p>Deeds, mortgage documents, property transfers, and lease agreements requiring the inmate's notarized signature.</p>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Legal Affidavits</h3>
+                        <p>Sworn statements, court documents, settlement agreements, and other legal papers requiring notarization while in custody.</p>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Marriage Documents</h3>
+                        <p>Marriage license applications, affidavits of inability to appear, and other documents for inmates getting married while incarcerated.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need a Notary for an Inmate?</h2>
+                <p>Contact us today to schedule your jail notary service. We come to all detention facilities in Southern California.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+19097518439" class="btn btn-light" onclick="gtag('event', 'cta_call_click');"><i class="fas fa-phone"></i> Call or Text (909) 751-8439</a>
+                    <a href="../contact.html" class="btn btn-outline-light" onclick="gtag('event', 'cta_schedule_click');">Schedule Online</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>On Call Notary</h3>
+                    <p>Professional mobile notary services throughout Southern California, specializing in jail and correctional facility notarizations.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../services.html">Services</a></li>
+                        <li><a href="../areas-served.html">Areas We Serve</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                        <li><a href="index.html">Jail Notary Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+19097518439">(909) 751-8439</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@oncallnotarysb.com">info@oncallnotarysb.com</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Serving Southern California</p>
+                    <p><i class="fas fa-clock"></i> Available 24/7, 365 days a year</p>
+                </div>
+                <div class="footer-instagram">
+                    <h4>Follow Us on Instagram</h4>
+                    <div class="instagram-feed">
+                        <!-- Instagram feed will be loaded via JavaScript -->
+                        <div class="instagram-placeholder"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 On Call Notary. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="../privacy.html">Privacy Policy</a>
+                    <a href="../terms.html">Terms of Service</a>
+                    <a href="../sitemap.xml">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+19097518439" class="floating-call-btn">
+        <i class="fas fa-phone"></i>
+        <span>Call or Text</span>
+    </a>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

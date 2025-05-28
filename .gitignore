@@ -1,0 +1,18 @@
+# Node and Python
+node_modules/
+__pycache__/
+*.pyc
+
+# System
+.DS_Store
+Thumbs.db
+
+# Build/Deploy
+.netlify/
+dist/
+build/
+.env
+*.log
+
+# Ignore deployment config (except for deployment)
+windsurf_deployment.yaml

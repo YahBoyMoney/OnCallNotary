@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://oncallnotarysb.com/sitemap.xml
+
+# Disallow admin and other sensitive directories
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /config/

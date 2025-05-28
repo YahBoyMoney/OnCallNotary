@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Notary Services in San Bernardino County | On Call Notary</title>
+    <meta name="description" content="Professional mobile notary services throughout San Bernardino County including San Bernardino, Colton, Rialto, Highland, Redlands, and surrounding cities. We come to you 24/7.">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Google Analytics placeholder -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
+    <style>
+        /* Additional styles for areas served page */
+        .areas-hero {
+            background: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.85)), url('images/san-bernardino-map.jpg') center/cover no-repeat;
+            padding: calc(var(--space-unit) * 14) 0 calc(var(--space-unit) * 8);
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .areas-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: calc(var(--space-unit) * 2);
+            font-weight: 700;
+        }
+        
+        .areas-hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto calc(var(--space-unit) * 4);
+            opacity: 0.9;
+        }
+        
+        .areas-list-section {
+            padding: calc(var(--space-unit) * 8) 0;
+        }
+        
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: calc(var(--space-unit) * 3);
+            margin-bottom: calc(var(--space-unit) * 6);
+        }
+        
+        .area-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+        
+        .area-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .area-image {
+            height: 180px;
+            overflow: hidden;
+        }
+        
+        .area-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .area-card:hover .area-image img {
+            transform: scale(1.1);
+        }
+        
+        .area-content {
+            padding: calc(var(--space-unit) * 3);
+        }
+        
+        .area-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: calc(var(--space-unit) * 1.5);
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .area-content p {
+            color: var(--gray-700);
+            margin-bottom: calc(var(--space-unit) * 2);
+            font-weight: 300;
+        }
+        
+        .area-content .btn {
+            width: 100%;
+        }
+        
+        .service-radius {
+            padding: calc(var(--space-unit) * 6) 0;
+            background-color: var(--light-color);
+        }
+        
+        .service-radius-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .service-radius h2 {
+            color: var(--primary-color);
+            margin-bottom: calc(var(--space-unit) * 3);
+            font-weight: 600;
+        }
+        
+        .service-radius p {
+            margin-bottom: calc(var(--space-unit) * 2);
+            color: var(--gray-700);
+        }
+        
+        .service-radius ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: calc(var(--space-unit) * 2);
+            margin-bottom: calc(var(--space-unit) * 4);
+        }
+        
+        .service-radius li {
+            background-color: var(--white);
+            padding: calc(var(--space-unit)) calc(var(--space-unit) * 2);
+            border-radius: 50px;
+            font-weight: 500;
+            color: var(--primary-color);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .animated-city-text { animation: fadeIn 1s ease-in-out; font-size: 1.5rem; font-weight: bold; color: var(--primary-color); text-align: center; padding: 1rem; background-color: var(--light-color); border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>On Call Notary</h1>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="areas-served.html" class="active">Areas We Serve</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn btn-primary desktop-book-btn">Book Now</a>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Areas Hero Section -->
+    <section class="areas-hero">
+        <div class="container">
+            <h1>Mobile Notary Services Throughout San Bernardino County</h1>
+            <p>We provide professional mobile notary services to homes, businesses, hospitals, and correctional facilities throughout San Bernardino County and surrounding areas.</p>
+            <div class="hero-buttons">
+                <a href="tel:+19097518439" class="btn btn-light"><i class="fas fa-phone"></i> Call or Text (909) 751-8439</a>
+                <a href="contact.html" class="btn btn-outline-light">Schedule Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Areas List Section -->
+    <section class="areas-list-section">
+        <div class="container">
+            <h2 class="section-title">Cities We Serve</h2>
+            <div class="areas-grid">
+                <div class="area-card">
+                    <div class="area-image">
+                        <div class="animated-city-text">San Bernardino</div>
+                    </div>
+                    <div class="area-content">
+                        <h3>San Bernardino</h3>
+                        <p>Professional mobile notary services available throughout San Bernardino city, including downtown, university district, and all residential neighborhoods.</p>
+                        <a href="areas/san-bernardino.html" class="btn btn-primary">Notary Services in San Bernardino</a>
+                    </div>
+                </div>
+                
+                <div class="area-card">
+                    <div class="area-image">
+                        <div class="animated-city-text">Highland</div>
+                    </div>
+                    <div class="area-content">
+                        <h3>Highland</h3>
+                        <p>Reliable mobile notary services for Highland residents and businesses. We come to your location for all your notary needs.</p>
+                        <a href="areas/highland.html" class="btn btn-primary">Notary Services in Highland</a>
+                    </div>
+                </div>
+                
+                <div class="area-card">
+                    <div class="area-image">
+                        <div class="animated-city-text">Rialto</div>
+                    </div>
+                    <div class="area-content">
+                        <h3>Rialto</h3>
+                        <p>Fast, convenient mobile notary services throughout Rialto. Available for homes, businesses, and emergency situations.</p>
+                        <a href="areas/rialto.html" class="btn btn-primary">Notary Services in Rialto</a>
+                    </div>
+                </div>
+                
+                <div class="area-card">
+                    <div class="area-image">
+                        <div class="animated-city-text">Colton</div>
+                    </div>
+                    <div class="area-content">
+                        <h3>Colton</h3>
+                        <p>Professional notary services for Colton residents and businesses. We travel to your location for convenient service.</p>
+                        <a href="areas/colton.html" class="btn btn-primary">Notary Services in Colton</a>
+                    </div>
+                </div>
+                
+                <div class="area-card">
+                    <div class="area-image">
+                        <div class="animated-city-text">Redlands</div>
+                    </div>
+                    <div class="area-content">
+                        <h3>Redlands</h3>
+                        <p>Mobile notary services throughout Redlands, including university area, downtown, and all residential neighborhoods.</p>
+                        <a href="areas/redlands.html" class="btn btn-primary">Notary Services in Redlands</a>
+                    </div>
+                </div>
+                
+                <div class="area-card">
+                    <div class="area-image">
+                        <div class="animated-city-text">Riverside</div>
+                    </div>
+                    <div class="area-content">
+                        <h3>Riverside</h3>
+                        <p>Professional mobile notary services available throughout Riverside. We come to your home, business, or hospital.</p>
+                        <a href="areas/riverside.html" class="btn btn-primary">Notary Services in Riverside</a>
+                    </div>
+                </div>
+                
+                <div class="area-card">
+                    <div class="area-image">
+                        <div class="animated-city-text">Fontana</div>
+                    </div>
+                    <div class="area-content">
+                        <h3>Fontana</h3>
+                        <p>Reliable mobile notary services for Fontana residents and businesses. Available for all your notarization needs.</p>
+                        <a href="areas/fontana.html" class="btn btn-primary">Notary Services in Fontana</a>
+                    </div>
+                </div>
+                
+                <div class="area-card">
+                    <div class="area-image">
+                        <div class="animated-city-text">Ontario</div>
+                    </div>
+                    <div class="area-content">
+                        <h3>Ontario</h3>
+                        <p>Professional mobile notary services throughout Ontario, including airport area, business districts, and residential neighborhoods.</p>
+                        <a href="areas/ontario.html" class="btn btn-primary">Notary Services in Ontario</a>
+                    </div>
+                </div>
+                
+                <div class="area-card">
+                    <div class="area-image">
+                        <div class="animated-city-text">Rancho Cucamonga</div>
+                    </div>
+                    <div class="area-content">
+                        <h3>Rancho Cucamonga</h3>
+                        <p>Fast and reliable mobile notary services for Rancho Cucamonga residents and businesses. We come to you!</p>
+                        <a href="areas/rancho-cucamonga.html" class="btn btn-primary">Notary Services in Rancho Cucamonga</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Radius Section -->
+    <section class="service-radius">
+        <div class="container">
+            <div class="service-radius-content">
+                <h2>Our Service Radius</h2>
+                <p>We provide mobile notary services throughout San Bernardino County and parts of Riverside County. Our service radius includes but is not limited to:</p>
+                <ul>
+                    <li>San Bernardino</li>
+                    <li>Highland</li>
+                    <li>Rialto</li>
+                    <li>Colton</li>
+                    <li>Redlands</li>
+                    <li>Loma Linda</li>
+                    <li>Grand Terrace</li>
+                    <li>Bloomington</li>
+                    <li>Fontana</li>
+                    <li>Ontario</li>
+                    <li>Rancho Cucamonga</li>
+                    <li>Upland</li>
+                    <li>Riverside</li>
+                    <li>Moreno Valley</li>
+                    <li>Yucaipa</li>
+                    <li>Beaumont</li>
+                </ul>
+                <p>Don't see your location listed? Contact us! We may still be able to serve you.</p>
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our Mobile Notary Service?</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Available 24/7</h3>
+                    <p>We understand that notary needs don't always happen during business hours. That's why we're available 24/7 for emergency situations.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>We Come To You</h3>
+                    <p>No need to travel or take time off work. Our mobile notary service comes to your location - home, office, hospital, or jail.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Licensed & Bonded</h3>
+                    <p>Our notaries are licensed by the State of California, bonded, and insured for your protection and peace of mind.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>5-Star Service</h3>
+                    <p>We pride ourselves on providing exceptional service, as evidenced by our perfect 5-star rating on Google Reviews.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Competitive Pricing</h3>
+                    <p>We offer transparent, competitive pricing with no hidden fees. We charge the California statutory maximum of $15 per signature.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Experience & Expertise</h3>
+                    <p>With years of experience in all types of notarizations, we have the expertise to handle your documents correctly and efficiently.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Schedule a Mobile Notary?</h2>
+                <p>Contact us today to book your appointment. We'll come to your location throughout San Bernardino County.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+19097518439" class="btn btn-light"><i class="fas fa-phone"></i> Call or Text (909) 751-8439</a>
+                    <a href="contact.html" class="btn btn-outline-light">Schedule Online</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>On Call Notary</h3>
+                    <p>Professional mobile notary services throughout San Bernardino County and the Inland Empire.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="areas-served.html">Areas We Serve</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-phone"></i> (909) 751-8439</p>
+                    <p><i class="fas fa-envelope"></i> info@oncallnotarysb.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Serving San Bernardino County, CA</p>
+                </div>
+                <div class="footer-instagram">
+                    <h4>Follow Us on Instagram</h4>
+                    <div class="instagram-feed">
+                        <!-- Instagram feed will be loaded via JavaScript -->
+                        <div class="instagram-placeholder"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 On Call Notary. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+19097518439" class="floating-call-btn">
+        <i class="fas fa-phone"></i>
+        <span>Call or Text</span>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

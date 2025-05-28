@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Angeles County Jail Notary Services – Mobile Notary for Inmates</title>
+    <meta name="description" content="Professional mobile notary services for inmates at Los Angeles County jails including Twin Towers, Men's Central Jail, Century Regional, Pitchess, and NCCF. Call (909) 751-8439 for fast inmate notary service.">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!-- Google Analytics placeholder -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
+    <!-- JSON-LD for LocalBusiness and Service -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "On Call Notary - Los Angeles County Jail Notary Services",
+      "image": "https://oncallnotarysb.com/images/logo.png",
+      "@id": "https://oncallnotarysb.com/jail-notary/los-angeles-county.html",
+      "url": "https://oncallnotarysb.com/jail-notary/los-angeles-county.html",
+      "telephone": "+19097518439",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Mobile Service",
+        "addressLocality": "Los Angeles",
+        "addressRegion": "CA",
+        "postalCode": "90012",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "County",
+        "name": "Los Angeles County",
+        "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles_County,_California"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "serviceOffer": {
+        "@type": "Service",
+        "name": "Los Angeles County Jail Notary Services",
+        "description": "Mobile notary services for inmates at all Los Angeles County detention facilities, including Men's Central Jail, Twin Towers Correctional Facility, Century Regional Detention Facility, Pitchess Detention Center, and North County Correctional Facility.",
+        "areaServed": "Los Angeles County, CA",
+        "provider": {"@type": "LegalService", "name": "On Call Notary"}
+      },
+      "sameAs": [
+        "https://www.facebook.com/oncallnotarysb",
+        "https://www.instagram.com/oncallnotarysb"
+      ]
+    }
+    </script>
+    
+    <style>
+        /* Additional styles for jail facility pages */
+        .facility-hero {
+            background: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.85)), url('../images/la-county-jails.jpg') center/cover no-repeat;
+            padding: calc(var(--space-unit) * 14) 0 calc(var(--space-unit) * 8);
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .facility-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: calc(var(--space-unit) * 2);
+            font-weight: 700;
+        }
+        
+        .facility-hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto calc(var(--space-unit) * 4);
+            opacity: 0.9;
+        }
+        
+        .jail-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: calc(var(--space-unit) * 4);
+            margin-top: calc(var(--space-unit) * 4);
+        }
+        
+        .jail-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            padding: calc(var(--space-unit) * 4);
+        }
+        
+        .jail-card h3 {
+            color: var(--primary-color);
+            margin-bottom: calc(var(--space-unit) * 2);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: calc(var(--space-unit));
+            font-size: 1.5rem;
+        }
+        
+        .jail-card h3 i {
+            color: var(--accent-color);
+        }
+        
+        .jail-card p {
+            color: var(--gray-700);
+            line-height: 1.7;
+            margin-bottom: calc(var(--space-unit) * 2);
+        }
+        
+        .jail-info {
+            display: flex;
+            flex-direction: column;
+            gap: calc(var(--space-unit) * 2);
+            margin-bottom: calc(var(--space-unit) * 3);
+        }
+        
+        .jail-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: calc(var(--space-unit) * 2);
+        }
+        
+        .jail-info-item i {
+            color: var(--accent-color);
+            margin-top: 5px;
+        }
+        
+        .jail-info-content h4 {
+            margin-bottom: calc(var(--space-unit));
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .jail-info-content p {
+            margin-bottom: calc(var(--space-unit));
+        }
+        
+        .document-examples {
+            padding: calc(var(--space-unit) * 6) 0;
+            background-color: var(--gray-100);
+        }
+        
+        .document-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: calc(var(--space-unit) * 3);
+        }
+        
+        .document-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            padding: calc(var(--space-unit) * 3);
+            transition: transform 0.3s ease;
+        }
+        
+        .document-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .document-card h3 {
+            color: var(--primary-color);
+            margin-bottom: calc(var(--space-unit) * 2);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: calc(var(--space-unit));
+        }
+        
+        .document-card h3 i {
+            color: var(--accent-color);
+        }
+        
+        .document-card p {
+            color: var(--gray-700);
+            line-height: 1.7;
+        }
+        
+        @media (min-width: 768px) {
+            .jail-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <h1>On Call Notary</h1>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../services.html">Services</a></li>
+                    <li><a href="../areas-served.html">Areas We Serve</a></li>
+                    <li><a href="index.html">Jail Notary</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Facility Hero Section -->
+    <section class="facility-hero">
+        <div class="container">
+            <h1>Los Angeles County Jail Notary Services</h1>
+            <p>Professional mobile notary services for inmates at all Los Angeles County detention facilities. We come directly to the jail for all your notarization needs.</p>
+            <div class="hero-buttons">
+                <a href="tel:+19097518439" class="btn btn-primary" onclick="gtag('event', 'call_button_click');"><i class="fas fa-phone"></i> Call or Text (909) 751-8439</a>
+                <a href="../contact.html" class="btn btn-outline-light">Schedule Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Los Angeles County Jail Notary Services</h2>
+            <p class="section-subtitle text-center mb-5">We provide professional notary services at all Los Angeles County detention facilities, ensuring your documents are properly executed even when your loved one is incarcerated.</p>
+            
+            <div class="content-block">
+                <p>Los Angeles County operates the largest jail system in the United States, with multiple facilities throughout the county housing thousands of inmates. Each facility has specific protocols for notary services, and our experienced team is familiar with all of them.</p>
+                <p>Our mobile notary service travels to all Los Angeles County detention centers, providing professional notarization for various documents including powers of attorney, real estate documents, custody arrangements, and more. We understand the urgency often associated with these documents and strive to schedule appointments promptly.</p>
+                <p>All of our notaries are commissioned by the State of California and maintain thorough records of all notarizations in compliance with state regulations. We bring all necessary supplies, including our official seal, journal, and pens, ensuring a complete and legally valid notarization every time.</p>
+            </div>
+            
+            <div class="jail-cards">
+                <div class="jail-card">
+                    <h3><i class="fas fa-building"></i> Men's Central Jail & Twin Towers</h3>
+                    <p>Located in downtown Los Angeles, these adjacent facilities form the core of LA County's jail system. Men's Central Jail (MCJ) is one of the largest jails in the world, while Twin Towers Correctional Facility houses both general population inmates and those requiring medical or mental health services.</p>
+                    
+                    <div class="jail-info">
+                        <div class="jail-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="jail-info-content">
+                                <h4>Location</h4>
+                                <p><strong>Men's Central Jail:</strong> 441 Bauchet Street, Los Angeles, CA 90012<br>
+                                <strong>Twin Towers:</strong> 450 Bauchet Street, Los Angeles, CA 90012</p>
+                            </div>
+                        </div>
+                        
+                        <div class="jail-info-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="jail-info-content">
+                                <h4>Visiting Information</h4>
+                                <p>Visits must be scheduled in advance through the LA County Sheriff's Department website or by calling (213) 473-6100. For notary services, we typically enter as legal visitors, which often requires advance scheduling. We're familiar with both facilities' protocols for notary visits.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="jail-info-item">
+                            <i class="fas fa-file-signature"></i>
+                            <div class="jail-info-content">
+                                <h4>Our Approach</h4>
+                                <p>Due to the size and complexity of these facilities, we recommend scheduling notary services at least 48 hours in advance when possible. We're experienced with the specific security procedures at these downtown facilities and can navigate them efficiently to ensure your documents are properly notarized.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="jail-card">
+                    <h3><i class="fas fa-building"></i> Century Regional Detention Facility</h3>
+                    <p>Located in Lynwood, Century Regional Detention Facility (CRDF) is the main women's jail in Los Angeles County, housing female inmates of all security levels.</p>
+                    
+                    <div class="jail-info">
+                        <div class="jail-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="jail-info-content">
+                                <h4>Location</h4>
+                                <p>11705 Alameda Street, Lynwood, CA 90262</p>
+                            </div>
+                        </div>
+                        
+                        <div class="jail-info-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="jail-info-content">
+                                <h4>Visiting Information</h4>
+                                <p>Visits must be scheduled in advance through the LA County Sheriff's Department website or by calling the facility. For notary services, we typically enter as professional visitors and are familiar with the facility's protocols for document signing.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="jail-info-item">
+                            <i class="fas fa-file-signature"></i>
+                            <div class="jail-info-content">
+                                <h4>Our Approach</h4>
+                                <p>We're experienced with the specific requirements for notarizing documents at CRDF. This facility often has different procedures than the men's facilities, and we understand these nuances to ensure a smooth notarization process.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="jail-card">
+                    <h3><i class="fas fa-building"></i> Pitchess Detention Center</h3>
+                    <p>Located in Castaic, the Pitchess Detention Center complex includes several facilities: North, South, East, and North County Correctional Facility (NCCF). This large complex houses thousands of inmates across various security levels.</p>
+                    
+                    <div class="jail-info">
+                        <div class="jail-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="jail-info-content">
+                                <h4>Location</h4>
+                                <p>29320 The Old Road, Castaic, CA 91384 (main address - specific facilities have different internal addresses)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="jail-info-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="jail-info-content">
+                                <h4>Visiting Information</h4>
+                                <p>Each facility within the complex has its own visiting schedule and protocols. Visits must be scheduled in advance through the LA County Sheriff's Department. For notary services, advance scheduling is essential due to the size and complexity of this detention complex.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="jail-info-item">
+                            <i class="fas fa-file-signature"></i>
+                            <div class="jail-info-content">
+                                <h4>Our Approach</h4>
+                                <p>Due to the distance from central Los Angeles, we often schedule multiple notary appointments on the same day at this complex. We're familiar with each facility's specific procedures and can help determine which exact facility your loved one is housed in if you're uncertain.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="jail-card">
+                    <h3><i class="fas fa-building"></i> Other LA County Facilities</h3>
+                    <p>Los Angeles County operates several other detention facilities, including Century Regional Detention Facility (Lynwood), Mira Loma Detention Center, and various station jails throughout the county.</p>
+                    
+                    <div class="jail-info">
+                        <div class="jail-info-item">
+                            <i class="fas fa-info-circle"></i>
+                            <div class="jail-info-content">
+                                <h4>Additional Facilities</h4>
+                                <p>We provide notary services at all LA County detention facilities, including smaller facilities and station jails. Each has its own protocols, but our experienced notaries are familiar with the requirements at each location.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="jail-info-item">
+                            <i class="fas fa-file-signature"></i>
+                            <div class="jail-info-content">
+                                <h4>Our Approach</h4>
+                                <p>For smaller facilities or station jails, the notarization process is often more straightforward than at the larger complexes. We can typically schedule appointments with shorter notice at these locations, though advance scheduling is still recommended whenever possible.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Document Examples Section -->
+    <section class="document-examples">
+        <div class="container">
+            <h2 class="section-title text-center">Documents We Notarize at Los Angeles County Jails</h2>
+            <p class="section-subtitle text-center mb-5">Common documents we notarize for inmates at Los Angeles County detention facilities include:</p>
+            
+            <div class="document-cards">
+                <div class="document-card">
+                    <h3><i class="fas fa-file-contract"></i> Powers of Attorney</h3>
+                    <p>General, limited, and durable powers of attorney allowing designated individuals to handle specific matters while the inmate is incarcerated. These documents are especially important for inmates facing longer sentences who need trusted representatives to manage their affairs.</p>
+                </div>
+                
+                <div class="document-card">
+                    <h3><i class="fas fa-home"></i> Real Estate Documents</h3>
+                    <p>Property deeds, mortgage documents, refinancing agreements, and property transfers requiring notarized signatures. With LA County's high property values, these documents often need timely processing to prevent financial complications for families.</p>
+                </div>
+                
+                <div class="document-card">
+                    <h3><i class="fas fa-child"></i> Child Custody Documents</h3>
+                    <p>Temporary guardianship forms, custody agreements, and consent forms for minor children. These documents ensure children's needs can be legally addressed by designated caregivers during the parent's incarceration, providing stability during difficult times.</p>
+                </div>
+                
+                <div class="document-card">
+                    <h3><i class="fas fa-briefcase"></i> Business Documents</h3>
+                    <p>Business ownership transfers, corporate resolutions, partnership agreements, and other business-related documents. In LA's diverse business environment, these documents often need timely processing to prevent disruption to ongoing business operations.</p>
+                </div>
+                
+                <div class="document-card">
+                    <h3><i class="fas fa-hand-holding-usd"></i> Financial Authorizations</h3>
+                    <p>Bank account access authorizations, financial power of attorney forms, and other documents allowing designated individuals to manage financial affairs. These ensure bills continue to be paid and financial obligations are met during incarceration.</p>
+                </div>
+                
+                <div class="document-card">
+                    <h3><i class="fas fa-gavel"></i> Legal Affidavits</h3>
+                    <p>Sworn statements and affidavits for legal proceedings, including those related to the inmate's case or other civil matters. These documents often have strict requirements for notarization to be considered valid in court proceedings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title text-center">Our Los Angeles County Jail Notary Process</h2>
+            <p class="section-subtitle text-center mb-5">We've streamlined the process of getting documents notarized for inmates in LA County's complex jail system:</p>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Initial Consultation</h3>
+                        <p>Call us at (909) 751-8439 to discuss your specific needs and the facility where your loved one is located. We'll explain the process and any facility-specific requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Verification</h3>
+                        <p>We'll help you verify the inmate's exact location using the LA County inmate locator system if needed, as inmates are sometimes transferred between facilities.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Document Preparation</h3>
+                        <p>We'll guide you on document preparation and requirements. For many document types, we can provide templates or guidance on proper formatting.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Scheduling</h3>
+                        <p>We'll coordinate with the detention facility to schedule an appointment for the notarization, working within their visitation protocols and hours.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>On-Site Notarization</h3>
+                        <p>Our notary will meet with the inmate at the scheduled time, verify their identity, and complete the notarization process in compliance with California notary law.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Document Delivery</h3>
+                        <p>After notarization, we can either provide the documents to a designated family member, arrange for secure delivery, or handle filing if required.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">What Our Clients Say</h2>
+            <p class="section-subtitle text-center mb-5">Read testimonials from clients who have used our notary services at Los Angeles County detention facilities:</p>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p>"When my husband was at Twin Towers, we needed urgent documents notarized for our home sale. On Call Notary was professional, prompt, and made the process so easy during a stressful time. They navigated the complex security procedures without issue and completed everything perfectly. Their knowledge of the LA County jail system saved us so much time and stress!"</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-image">
+                        <img src="../images/testimonial-3.jpg" alt="Elena M., Los Angeles" loading="lazy">
+                    </div>
+                    <div class="author-info">
+                        <h4>Elena M.</h4>
+                        <p>Los Angeles, CA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need a Notary at a Los Angeles County Jail?</h2>
+                <p>Contact us today to schedule your jail notary service. We serve all Los Angeles County detention facilities with professionalism and care.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+19097518439" class="btn btn-light" onclick="gtag('event', 'cta_call_click');"><i class="fas fa-phone"></i> Call or Text (909) 751-8439</a>
+                    <a href="../contact.html" class="btn btn-outline-light" onclick="gtag('event', 'cta_schedule_click');">Schedule Online</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>On Call Notary</h3>
+                    <p>Professional mobile notary services throughout Southern California, specializing in jail and correctional facility notarizations.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../services.html">Services</a></li>
+                        <li><a href="../areas-served.html">Areas We Serve</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                        <li><a href="index.html">Jail Notary Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+19097518439">(909) 751-8439</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@oncallnotarysb.com">info@oncallnotarysb.com</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Serving Southern California</p>
+                    <p><i class="fas fa-clock"></i> Available 24/7, 365 days a year</p>
+                </div>
+                <div class="footer-instagram">
+                    <h4>Follow Us on Instagram</h4>
+                    <div class="instagram-feed">
+                        <!-- Instagram feed will be loaded via JavaScript -->
+                        <div class="instagram-placeholder"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 On Call Notary. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="../privacy.html">Privacy Policy</a>
+                    <a href="../terms.html">Terms of Service</a>
+                    <a href="../sitemap.xml">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+19097518439" class="floating-call-btn">
+        <i class="fas fa-phone"></i>
+        <span>Call or Text</span>
+    </a>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

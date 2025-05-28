@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Book Now | On Call Notary San Bernardino County</title>
+    <meta name="description" content="Schedule your mobile notary appointment online or contact us directly. We provide notary services throughout San Bernardino County and the Inland Empire.">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Google Analytics placeholder -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
+    <style>
+        /* Additional styles for contact page */
+        .contact-section {
+            padding: calc(var(--space-unit) * 8) 0;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: calc(var(--space-unit) * 4);
+        }
+        
+        .contact-info {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            padding: calc(var(--space-unit) * 4);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .contact-info h2 {
+            color: var(--primary-color);
+            margin-bottom: calc(var(--space-unit) * 3);
+            font-weight: 600;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: calc(var(--space-unit) * 3);
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0, 51, 102, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-right: calc(var(--space-unit) * 2);
+            flex-shrink: 0;
+        }
+        
+        .contact-details h3 {
+            font-size: 1.1rem;
+            margin-bottom: calc(var(--space-unit));
+            color: var(--primary-color);
+        }
+        
+        .contact-details p, .contact-details a {
+            color: var(--gray-700);
+            margin-bottom: calc(var(--space-unit) * 0.5);
+            display: block;
+        }
+        
+        .contact-details a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .scheduler-container {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            padding: calc(var(--space-unit) * 4);
+            box-shadow: var(--box-shadow);
+            height: 650px;
+        }
+        
+        .scheduler-container h2 {
+            color: var(--primary-color);
+            margin-bottom: calc(var(--space-unit) * 3);
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        .scheduler-iframe {
+            width: 100%;
+            height: 550px;
+            border: none;
+            overflow: hidden;
+        }
+        
+        .contact-form {
+            margin-top: calc(var(--space-unit) * 3);
+        }
+        
+        .form-group {
+            margin-bottom: calc(var(--space-unit) * 2);
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: calc(var(--space-unit));
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: calc(var(--space-unit) * 1.5);
+            border: 1px solid var(--gray-300);
+            border-radius: var(--border-radius);
+            font-family: var(--font-primary);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.1);
+        }
+        
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .btn-submit {
+            width: 100%;
+            padding: calc(var(--space-unit) * 1.5);
+            font-weight: 600;
+        }
+        
+        @media (min-width: 992px) {
+            .contact-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>On Call Notary</h1>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="areas-served.html">Areas We Serve</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn btn-primary desktop-book-btn">Book Now</a>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact & Book Now</h1>
+            <p>Schedule your mobile notary appointment or contact us directly</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Call or Text</h3>
+                            <a href="tel:+19097518439">(909) 751-8439</a>
+                            <p>Available 24/7 for your notary needs</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Us</h3>
+                            <a href="mailto:info@oncallnotarysb.com">info@oncallnotarysb.com</a>
+                            <p>We'll respond within 2 hours during business hours</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Service Area</h3>
+                            <p>San Bernardino County and surrounding areas</p>
+                            <p>We come to your location - home, business, hospital, or jail</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Hours of Operation</h3>
+                            <p>Monday - Friday: 8:00 AM - 8:00 PM</p>
+                            <p>Saturday - Sunday: 9:00 AM - 5:00 PM</p>
+                            <p>After-hours appointments available upon request</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>Send Us a Message</h3>
+                        <form id="contactForm" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="contact-direct-container" style="background: #f8f9fa; border-radius: 10px; padding: 2.5rem; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+                    <h2 style="text-align: center; margin-bottom: 1.5rem; color: #003366;">Contact Us Directly</h2>
+                    <p style="text-align: center; margin-bottom: 2rem; font-size: 1.1rem;">We're available 24/7 for your notary needs. Call or text us for immediate assistance.</p>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <a href="tel:+19097518439" class="btn btn-primary" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 1rem; font-size: 1.2rem; background-color: #FFC700; color: #003366; border-radius: 50px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
+                            <i class="fas fa-phone"></i> Call Now: (909) 751-8439
+                        </a>
+                        
+                        <a href="sms:+19097518439" class="btn btn-outline" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 1rem; font-size: 1.2rem; background-color: transparent; color: #003366; border: 2px solid #003366; border-radius: 50px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
+                            <i class="fas fa-sms"></i> Text Us: (909) 751-8439
+                        </a>
+                    </div>
+                    
+                    <div style="margin-top: 2.5rem; text-align: center;">
+                        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: #003366;">Why Contact Us Directly?</h3>
+                        <ul style="list-style: none; padding: 0; text-align: left; max-width: 400px; margin: 0 auto;">
+                            <li style="margin-bottom: 0.8rem; display: flex; align-items: flex-start; gap: 0.5rem;">
+                                <i class="fas fa-check-circle" style="color: #FFC700; margin-top: 0.2rem;"></i>
+                                <span>Immediate response to your notary needs</span>
+                            </li>
+                            <li style="margin-bottom: 0.8rem; display: flex; align-items: flex-start; gap: 0.5rem;">
+                                <i class="fas fa-check-circle" style="color: #FFC700; margin-top: 0.2rem;"></i>
+                                <span>Flexible scheduling that works for you</span>
+                            </li>
+                            <li style="margin-bottom: 0.8rem; display: flex; align-items: flex-start; gap: 0.5rem;">
+                                <i class="fas fa-check-circle" style="color: #FFC700; margin-top: 0.2rem;"></i>
+                                <span>Personalized service tailored to your situation</span>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; gap: 0.5rem;">
+                                <i class="fas fa-check-circle" style="color: #FFC700; margin-top: 0.2rem;"></i>
+                                <span>Available 24/7 for emergency notarizations</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section bg-light">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3>What documents do I need to have ready for notarization?</h3>
+                    <p>You should have all documents that need to be notarized, as well as a valid government-issued photo ID (driver's license, passport, etc.). Some documents may require additional witnesses or information.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>How much does a mobile notary service cost?</h3>
+                    <p>Our basic notarization fee is $15 per signature (the maximum allowed by California law). Travel fees start at $35 depending on your location. Special services like jail visits or loan signings have package pricing.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>How quickly can you arrive for an emergency notarization?</h3>
+                    <p>For emergency situations, we can often arrive within 1-2 hours in most parts of San Bernardino County. Please call us directly for the fastest service in urgent cases.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Do you provide notary services in jails and correctional facilities?</h3>
+                    <p>Yes, we specialize in jail notary services and are familiar with the procedures at all San Bernardino County detention facilities. We can help coordinate with facility staff to arrange the visit.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What forms of payment do you accept?</h3>
+                    <p>We accept cash, credit/debit cards, Venmo, Zelle, and PayPal. Payment is due at the time of service unless other arrangements have been made in advance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>On Call Notary</h3>
+                    <p>Professional mobile notary services throughout San Bernardino County and the Inland Empire.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="areas-served.html">Areas We Serve</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-phone"></i> (909) 751-8439</p>
+                    <p><i class="fas fa-envelope"></i> info@oncallnotarysb.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Serving San Bernardino County, CA</p>
+                </div>
+                <div class="footer-instagram">
+                    <h4>Follow Us on Instagram</h4>
+                    <div class="instagram-feed">
+                        <!-- Instagram feed will be loaded via JavaScript -->
+                        <div class="instagram-placeholder"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 On Call Notary. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+19097518439" class="floating-call-btn">
+        <i class="fas fa-phone"></i>
+        <span>Call or Text</span>
+    </a>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // In a real implementation, this would send the form data to a server
+            alert('Thank you for your message! We will get back to you shortly.');
+            this.reset();
+        });
+        
+        // FAQ accordion functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('h3');
+                
+                question.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
