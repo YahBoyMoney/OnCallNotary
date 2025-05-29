@@ -1,9 +1,47 @@
+# Global settings for all web crawlers
 User-agent: *
 Allow: /
+Allow: /index.html
+Allow: /services.html
+Allow: /jail-notary.html
+Allow: /areas-served.html
+Allow: /contact.html
 
-Sitemap: https://oncallnotarysb.com/sitemap.xml
+# Explicitly allow service pages
+Allow: /services/
+Allow: /services/hospital-notary.html
+Allow: /services/loan-signing.html
+Allow: /services/trust-and-wills.html
+Allow: /services/inmate-marriages.html
+
+# Explicitly allow all location pages
+Allow: /areas/
+Allow: /areas/*.html
+
+# Explicitly allow all jail facility pages
+Allow: /jail-notary/
+Allow: /jail-notary/san-bernardino-county/
+Allow: /jail-notary/riverside-county/
+Allow: /jail-notary/los-angeles-county.html
+Allow: /jail-notary/orange-county.html
+
+# Sitemap location
+Sitemap: https://oncallnotary.org/sitemap.xml
 
 # Disallow admin and other sensitive directories
 Disallow: /admin/
 Disallow: /includes/
 Disallow: /config/
+Disallow: /css/
+Disallow: /js/
+Disallow: /images/raw/
+
+# Specific instructions for Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Specific instructions for Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
