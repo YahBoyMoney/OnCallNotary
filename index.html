@@ -191,27 +191,320 @@
 
     <!-- Hero Section -->
     <section class="hero" style="background: linear-gradient(135deg, #002244, #003366, #004488); color: white; padding: 5rem 0 3rem; position: relative; overflow: hidden;">
-        <div class="container">
+        <!-- Mobile-Responsive Styles -->
+        <style>
+            /* Base Styles */
+            .hero-container {
+                width: 90%;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 15px;
+            }
+            
+            .urgency-banner {
+                text-align: center;
+                margin-bottom: 2rem;
+                animation: pulse 2s infinite;
+            }
+            
+            .urgency-badge {
+                background-color: #FFC700;
+                color: #002244;
+                font-weight: 700;
+                padding: 0.5rem 1.5rem;
+                border-radius: 50px;
+                display: inline-flex;
+                align-items: center;
+                font-size: 1.1rem;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            }
+            
+            .hero-flex-container {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 3rem;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            
+            .hero-content {
+                flex: 1;
+                min-width: 300px;
+                max-width: 600px;
+            }
+            
+            .hero-heading {
+                font-size: 2.8rem;
+                margin-bottom: 1rem;
+                line-height: 1.2;
+                text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            }
+            
+            .hero-subheading {
+                font-size: 1.6rem;
+                color: #FFC700;
+                margin-bottom: 1.2rem;
+                font-weight: 600;
+                text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+            }
+            
+            .hero-description {
+                font-size: 1.1rem;
+                margin-bottom: 1.5rem;
+                color: #e0e0e0;
+                line-height: 1.6;
+            }
+            
+            .social-proof {
+                background: rgba(255,255,255,0.1);
+                border-left: 4px solid #FFC700;
+                padding: 1rem;
+                margin: 1.5rem 0;
+                border-radius: 0 8px 8px 0;
+            }
+            
+            .star-rating {
+                display: flex;
+                align-items: center;
+                margin-bottom: 0.5rem;
+            }
+            
+            .stars {
+                color: #FFC700;
+                margin-right: 0.5rem;
+            }
+            
+            .testimonial {
+                font-style: italic;
+                margin: 0;
+                font-size: 0.95rem;
+            }
+            
+            .hero-cta {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                margin: 1.5rem 0;
+            }
+            
+            .cta-button {
+                background-color: #FFC700;
+                color: #002244;
+                border: 2px solid #FFC700;
+                padding: 0.9rem 2rem;
+                font-weight: 700;
+                font-size: 1.2rem;
+                border-radius: 50px;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                text-align: center;
+                display: inline-block;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            
+            .guarantee-text {
+                text-align: center;
+                margin: 0.4rem 0 0;
+                font-size: 0.9rem;
+                color: #FFC700;
+            }
+            
+            .hero-image-container {
+                flex: 1;
+                min-width: 300px;
+                max-width: 500px;
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+                position: relative;
+            }
+            
+            .response-badge {
+                position: absolute;
+                top: 20px;
+                right: -30px;
+                background-color: #FFC700;
+                color: #002244;
+                font-weight: 700;
+                padding: 0.5rem 2rem;
+                transform: rotate(45deg);
+                z-index: 10;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            }
+            
+            .hero-image {
+                width: 100%;
+                height: auto;
+                display: block;
+                transition: transform 0.3s ease;
+            }
+            
+            .payment-methods {
+                background: rgba(0,0,0,0.7);
+                padding: 0.8rem;
+                text-align: center;
+            }
+            
+            .payment-text {
+                margin: 0 0 0.5rem;
+                font-size: 0.9rem;
+            }
+            
+            .payment-icons {
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                align-items: center;
+            }
+            
+            .payment-icon {
+                font-size: 1.8rem;
+            }
+            
+            @keyframes pulse {
+                0% { transform: scale(1); }
+                50% { transform: scale(1.05); }
+                100% { transform: scale(1); }
+            }
+            
+            /* Mobile Responsive Styles */
+            @media (max-width: 768px) {
+                .hero {
+                    padding: 3rem 0 2rem;
+                }
+                
+                .urgency-badge {
+                    font-size: 0.9rem;
+                    padding: 0.4rem 1rem;
+                    width: 90%;
+                    max-width: 300px;
+                    justify-content: center;
+                }
+                
+                .hero-flex-container {
+                    gap: 2rem;
+                }
+                
+                .hero-heading {
+                    font-size: 2rem;
+                    margin-bottom: 0.8rem;
+                }
+                
+                .hero-subheading {
+                    font-size: 1.2rem;
+                    margin-bottom: 1rem;
+                }
+                
+                .hero-description {
+                    font-size: 1rem;
+                    margin-bottom: 1rem;
+                }
+                
+                .social-proof {
+                    padding: 0.8rem;
+                    margin: 1rem 0;
+                }
+                
+                .testimonial {
+                    font-size: 0.85rem;
+                }
+                
+                .hero-cta {
+                    margin: 1rem 0;
+                }
+                
+                .cta-button {
+                    padding: 0.8rem 1.5rem;
+                    font-size: 1.1rem;
+                    width: 100%;
+                }
+                
+                .guarantee-text {
+                    font-size: 0.8rem;
+                }
+                
+                .hero-image-container {
+                    margin: 0 auto;
+                }
+                
+                .response-badge {
+                    font-size: 0.8rem;
+                    padding: 0.3rem 1.5rem;
+                    top: 15px;
+                    right: -25px;
+                }
+                
+                .payment-icon {
+                    font-size: 1.5rem;
+                }
+            }
+            
+            /* Small Mobile Devices */
+            @media (max-width: 480px) {
+                .hero {
+                    padding: 2rem 0 1.5rem;
+                }
+                
+                .urgency-badge {
+                    font-size: 0.8rem;
+                    padding: 0.3rem 0.8rem;
+                }
+                
+                .hero-heading {
+                    font-size: 1.8rem;
+                }
+                
+                .hero-subheading {
+                    font-size: 1.1rem;
+                }
+                
+                .star-rating {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                
+                .stars {
+                    margin-bottom: 0.3rem;
+                }
+                
+                .cta-button {
+                    padding: 0.7rem 1.2rem;
+                    font-size: 1rem;
+                }
+                
+                .payment-icons {
+                    gap: 0.6rem;
+                }
+                
+                .payment-icon {
+                    font-size: 1.3rem;
+                }
+            }
+        </style>
+        
+        <div class="hero-container">
             <!-- Urgency Banner -->
-            <div style="text-align: center; margin-bottom: 2rem; animation: pulse 2s infinite;">
-                <span style="background-color: #FFC700; color: #002244; font-weight: 700; padding: 0.5rem 1.5rem; border-radius: 50px; display: inline-flex; align-items: center; font-size: 1.1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+            <div class="urgency-banner">
+                <span class="urgency-badge">
                     <i class="fas fa-clock" style="margin-right: 8px;"></i> AVAILABLE 24/7 — SAME DAY SERVICE
                 </span>
             </div>
             
-            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 3rem; max-width: 1200px; margin: 0 auto;">
-                <div style="flex: 1; min-width: 300px; max-width: 600px;">
-                    <h1 style="font-size: 2.8rem; margin-bottom: 1rem; line-height: 1.2; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">San Bernardino's #1 Mobile Notary Service</h1>
-                    <p class="subheadline" style="font-size: 1.6rem; color: #FFC700; margin-bottom: 1.2rem; font-weight: 600; text-shadow: 0 1px 2px rgba(0,0,0,0.3);">We Come To You — Anywhere, Anytime</p>
+            <div class="hero-flex-container">
+                <div class="hero-content">
+                    <h1 class="hero-heading">San Bernardino's #1 Mobile Notary Service</h1>
+                    <p class="hero-subheading">We Come To You — Anywhere, Anytime</p>
                     
-                    <p style="font-size: 1.1rem; margin-bottom: 1.5rem; color: #e0e0e0; line-height: 1.6;">
+                    <p class="hero-description">
                         Specializing in <strong style="color: #FFC700;">jail notary services</strong>, <strong style="color: #FFC700;">hospital visits</strong>, and <strong style="color: #FFC700;">emergency notarizations</strong> throughout the Inland Empire. No travel fees within San Bernardino County!
                     </p>
                     
                     <!-- Social Proof -->
-                    <div style="background: rgba(255,255,255,0.1); border-left: 4px solid #FFC700; padding: 1rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0;">
-                        <div style="display: flex; align-items: center; margin-bottom: 0.5rem;">
-                            <div style="color: #FFC700; margin-right: 0.5rem;">
+                    <div class="social-proof">
+                        <div class="star-rating">
+                            <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -220,40 +513,38 @@
                             </div>
                             <span style="font-weight: 600;">5.0/5 from 500+ satisfied clients</span>
                         </div>
-                        <p style="font-style: italic; margin: 0; font-size: 0.95rem;">
+                        <p class="testimonial">
                             "Fast response time and very professional. Came to the jail within hours of my call." - Maria S.
                         </p>
                     </div>
                     
                     <!-- Enhanced CTA -->
-                    <div class="hero-buttons" style="display: flex; flex-direction: column; gap: 0.5rem; margin: 1.5rem 0;">
-                        <a href="tel:+19097518439" class="btn btn-primary" 
-                           style="background-color: #FFC700; color: #002244; border: 2px solid #FFC700; padding: 0.9rem 2rem; font-weight: 700; font-size: 1.2rem; border-radius: 50px; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2); text-align: center;" 
-                           onclick="gtag('event', 'call_button_click');">
+                    <div class="hero-cta">
+                        <a href="tel:+19097518439" class="cta-button" onclick="gtag('event', 'call_button_click');">
                             <i class="fas fa-phone-alt" style="margin-right: 8px;"></i> CALL NOW: (909) 751-8439
                         </a>
-                        <p style="text-align: center; margin: 0.4rem 0 0; font-size: 0.9rem; color: #FFC700;">
+                        <p class="guarantee-text">
                             <i class="fas fa-check-circle" style="margin-right: 5px;"></i> 15-Minute Response Time Guarantee
                         </p>
                     </div>
                 </div>
                 
                 <!-- Enhanced Image Section -->
-                <div style="flex: 1; min-width: 300px; max-width: 500px; border-radius: 12px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.2); position: relative;">
-                    <div style="position: absolute; top: 20px; right: -30px; background-color: #FFC700; color: #002244; font-weight: 700; padding: 0.5rem 2rem; transform: rotate(45deg); z-index: 10; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+                <div class="hero-image-container">
+                    <div class="response-badge">
                         FAST RESPONSE
                     </div>
-                    <img src="images/homepage.png" alt="Professional Mobile Notary Services in San Bernardino" style="width: 100%; height: auto; display: block; transition: transform 0.3s ease;">
+                    <img src="images/homepage.png" alt="Professional Mobile Notary Services in San Bernardino" class="hero-image">
                     
                     <!-- Payment Methods -->
-                    <div style="background: rgba(0,0,0,0.7); padding: 0.8rem; text-align: center;">
-                        <p style="margin: 0 0 0.5rem; font-size: 0.9rem;">We Accept All Payment Methods:</p>
-                        <div style="display: flex; justify-content: center; gap: 1rem; align-items: center;">
-                            <i class="fab fa-cc-visa" style="font-size: 1.8rem;"></i>
-                            <i class="fab fa-cc-mastercard" style="font-size: 1.8rem;"></i>
-                            <i class="fab fa-cc-amex" style="font-size: 1.8rem;"></i>
-                            <i class="fab fa-venmo" style="font-size: 1.8rem;"></i>
-                            <span style="font-size: 1.8rem; font-weight: 700;">$</span>
+                    <div class="payment-methods">
+                        <p class="payment-text">We Accept All Payment Methods:</p>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa payment-icon"></i>
+                            <i class="fab fa-cc-mastercard payment-icon"></i>
+                            <i class="fab fa-cc-amex payment-icon"></i>
+                            <i class="fab fa-venmo payment-icon"></i>
+                            <span class="payment-icon" style="font-weight: 700;">$</span>
                         </div>
                     </div>
                 </div>
@@ -264,15 +555,6 @@
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" style="fill: #ffffff;"></path>
             </svg>
         </div>
-        
-        <!-- Add animation for the urgency banner -->
-        <style>
-            @keyframes pulse {
-                0% { transform: scale(1); }
-                50% { transform: scale(1.05); }
-                100% { transform: scale(1); }
-            }
-        </style>
     </section>
     
     <!-- Intro Section -->
