@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notary Services | On Call Notary San Bernardino County</title>
     <meta name="description" content="Professional mobile notary services including jail visits, inmate marriages, hospital notaries, loan signings, and business services throughout San Bernardino County.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://oncallnotary.org/services.html">
+    <meta property="og:title" content="Notary Services | On Call Notary San Bernardino County">
+    <meta property="og:description" content="Mobile notary specialists for jail visits, inmate marriages, hospital notaries, loan signings, and business services across San Bernardino County.">
+    <meta property="og:url" content="https://oncallnotary.org/services.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://oncallnotary.org/images/notary-hero.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Notary Services | On Call Notary San Bernardino County">
+    <meta name="twitter:description" content="24/7 mobile notary for jail visits, hospitals, real estate, and legal documents across San Bernardino County.">
+    <meta name="twitter:image" content="https://oncallnotary.org/images/notary-hero.jpg">
     
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +25,7 @@
     
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
-    
+
     <!-- Google Analytics placeholder -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
@@ -22,6 +33,35 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <!-- JSON-LD for Services -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://oncallnotary.org/services#mobile-notary",
+      "serviceType": ["Mobile notary", "Jail notary", "Hospital notary", "Loan signing"],
+      "provider": {
+        "@type": "LocalBusiness",
+        "@id": "https://oncallnotary.org/#localbusiness"
+      },
+      "areaServed": [
+        {"@type": "Place", "name": "San Bernardino County"},
+        {"@type": "Place", "name": "Riverside County"}
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Mobile Notary Services",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Jail & detention notarization"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Hospital & medical notarization"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Loan signing & real estate"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Power of attorney & estate documents"}}
+        ]
+      },
+      "url": "https://oncallnotary.org/services.html"
+    }
     </script>
 </head>
 <body>

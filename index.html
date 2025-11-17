@@ -5,7 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Notary San Bernardino | On Call Notary</title>
     <meta name="description" content="On Call Notary provides fast, reliable mobile notary services in San Bernardino, Colton, Rialto & surrounding Inland Empire. Call or text (909) 751-8439 to book!">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://oncallnotary.org/">
+    <meta property="og:title" content="Mobile Notary San Bernardino | On Call Notary">
+    <meta property="og:description" content="On Call Notary provides fast, reliable mobile notary services in San Bernardino County and the Inland Empire. Call or text (909) 751-8439 to book a mobile notary today.">
+    <meta property="og:url" content="https://oncallnotary.org/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://oncallnotary.org/images/notary-hero.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mobile Notary San Bernardino | On Call Notary">
+    <meta name="twitter:description" content="Fast, reliable mobile notary services across San Bernardino County. Call or text (909) 751-8439 to schedule.">
+    <meta name="twitter:image" content="https://oncallnotary.org/images/notary-hero.jpg">
     <meta name="google-site-verification" content="your-verification-code-here">
     
     <!-- Preconnect to external domains -->
@@ -38,16 +48,23 @@
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
+      "@id": "https://oncallnotary.org/#localbusiness",
       "name": "On Call Notary",
       "image": "https://oncallnotary.org/images/notary-hero.jpg",
-      "@id": "https://oncallnotary.org",
       "url": "https://oncallnotary.org",
       "telephone": "+19097518439",
+      "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "San Bernardino",
         "addressRegion": "CA",
+        "postalCode": "92401",
         "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.1083449,
+        "longitude": -117.2897652
       },
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
@@ -55,8 +72,19 @@
         "opens": "00:00",
         "closes": "23:59"
       },
-      "areaServed": ["San Bernardino","Colton","Rialto","Highland","Redlands","Riverside","Fontana","Ontario","Rancho Cucamonga"],
-      "priceRange": "$$"
+      "areaServed": [
+        {"@type": "Place", "name": "San Bernardino County"},
+        {"@type": "Place", "name": "San Bernardino"},
+        {"@type": "Place", "name": "Riverside County"},
+        {"@type": "Place", "name": "Inland Empire"}
+      ],
+      "serviceType": ["Mobile notary services", "Jail notarization", "Emergency notary"],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "telephone": "+19097518439",
+        "areaServed": "US-CA"
+      }
     }
     </script>
     
