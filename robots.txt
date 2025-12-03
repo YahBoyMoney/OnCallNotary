@@ -13,6 +13,7 @@ Allow: /services/hospital-notary.html
 Allow: /services/loan-signing.html
 Allow: /services/trust-and-wills.html
 Allow: /services/inmate-marriages.html
+Allow: /services/power-of-attorney.html
 
 # Explicitly allow all location pages
 Allow: /areas/

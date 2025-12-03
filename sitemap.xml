@@ -6,7 +6,7 @@
     <!-- Homepage (Highest Priority) -->
     <url>
         <loc>https://oncallnotary.org/</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
@@ -14,25 +14,25 @@
     <!-- Main Service Pages (High Priority) -->
     <url>
         <loc>https://oncallnotary.org/jail-notary.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://oncallnotary.org/services.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://oncallnotary.org/areas-served.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://oncallnotary.org/contact.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -40,25 +40,31 @@
     <!-- Specific Service Pages (High Priority) -->
     <url>
         <loc>https://oncallnotary.org/services/hospital-notary.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://oncallnotary.org/services/loan-signing.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://oncallnotary.org/services/trust-and-wills.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://oncallnotary.org/services/inmate-marriages.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://oncallnotary.org/services/power-of-attorney.html</loc>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -66,55 +72,55 @@
     <!-- City Pages (Medium-High Priority) -->
     <url>
         <loc>https://oncallnotary.org/areas/san-bernardino.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://oncallnotary.org/areas/colton.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://oncallnotary.org/areas/rialto.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://oncallnotary.org/areas/highland.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://oncallnotary.org/areas/redlands.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://oncallnotary.org/areas/fontana.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://oncallnotary.org/areas/ontario.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://oncallnotary.org/areas/riverside.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://oncallnotary.org/areas/rancho-cucamonga.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -122,13 +128,13 @@
     <!-- Jail Notary Pages (Medium-High Priority) -->
     <url>
         <loc>https://oncallnotary.org/jail-notary/los-angeles-county.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://oncallnotary.org/jail-notary/orange-county.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -136,25 +142,25 @@
     <!-- San Bernardino County Jails (Medium Priority) -->
     <url>
         <loc>https://oncallnotary.org/jail-notary/san-bernardino-county/west-valley-detention-center.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://oncallnotary.org/jail-notary/san-bernardino-county/central-detention-center.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://oncallnotary.org/jail-notary/san-bernardino-county/high-desert-detention-center.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://oncallnotary.org/jail-notary/san-bernardino-county/glen-helen-rehabilitation-center.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -162,25 +168,25 @@
     <!-- Riverside County Jails (Medium Priority) -->
     <url>
         <loc>https://oncallnotary.org/jail-notary/riverside-county/robert-presley-detention-center.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://oncallnotary.org/jail-notary/riverside-county/cois-byrd-detention-center.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://oncallnotary.org/jail-notary/riverside-county/john-benoit-detention-center.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://oncallnotary.org/jail-notary/riverside-county/larry-smith-correctional-facility.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -188,13 +194,13 @@
     <!-- Index files for subdirectories (Lower Priority) -->
     <url>
         <loc>https://oncallnotary.org/jail-notary/index.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://oncallnotary.org/jail-notary/riverside-county/index.html</loc>
-        <lastmod>2025-05-29</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
