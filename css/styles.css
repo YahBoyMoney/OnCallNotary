@@ -851,6 +851,17 @@ img {
     font-weight: 600;
     text-transform: uppercase;
     overflow: hidden;
+    text-decoration: none;
+    animation: pulse-call 2s infinite;
+}
+
+@keyframes pulse-call {
+    0%, 100% {
+        box-shadow: 0 5px 15px rgba(255, 199, 0, 0.3);
+    }
+    50% {
+        box-shadow: 0 5px 25px rgba(255, 199, 0, 0.6);
+    }
 }
 
 .floating-call-btn i {
@@ -864,8 +875,9 @@ img {
 }
 
 .floating-call-btn:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) scale(1.1);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    animation: none;
 }
 
 /* Responsive Styles */
@@ -989,5 +1001,28 @@ img {
     
     .hero-content {
         text-align: center;
+    }
+    
+    /* Improve mobile touch targets */
+    .btn, a.btn {
+        min-height: 44px;
+        min-width: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Better mobile spacing */
+    .section-title {
+        font-size: 1.75rem;
+        margin-bottom: calc(var(--space-unit) * 3);
+    }
+    
+    /* Floating button mobile optimization */
+    .floating-call-btn {
+        width: 56px;
+        height: 56px;
+        bottom: calc(var(--space-unit) * 2);
+        right: calc(var(--space-unit) * 2);
     }
 }

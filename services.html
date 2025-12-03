@@ -36,10 +36,14 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li class="has-dropdown">
-    <a href="services.html" class="active">Services</a>
+    <a href="services.html" class="active">Services <span style="font-family: 'Font Awesome 5 Free'; font-weight: 900;">&#xf107;</span></a>
     <ul class="dropdown services">
+        <li><a href="services/jail-notary.html">Jail Notary Services</a></li>
+        <li><a href="services/inmate-marriages.html">Inmate Marriage Services</a></li>
+        <li><a href="services/hospital-notary.html">Hospital Notary Services</a></li>
+        <li><a href="services/loan-signing.html">Loan Signing Services</a></li>
+        <li><a href="services/power-of-attorney.html">Power of Attorney</a></li>
         <li><a href="services/trust-and-wills.html">Trust & Wills Notarization</a></li>
-        <!-- Add other service links here if desired -->
     </ul>
                     <li class="has-dropdown">
                         <a href="areas-served.html">Areas Served</a>
@@ -84,6 +88,23 @@
     
     <!-- Include header JavaScript -->
     <script src="js/header.js"></script>
+
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="Breadcrumb" style="background-color: #f8f9fa; padding: 1rem 0; margin-top: 70px;">
+        <div class="container">
+            <ol style="list-style: none; padding: 0; margin: 0; display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem; font-size: 0.9rem;">
+                <li style="display: flex; align-items: center;">
+                    <a href="index.html" style="color: #003366; text-decoration: none;">
+                        <i class="fas fa-home" style="margin-right: 0.25rem;"></i> Home
+                    </a>
+                </li>
+                <li style="color: #6c757d;">
+                    <i class="fas fa-chevron-right" style="font-size: 0.7rem; margin: 0 0.5rem;"></i>
+                </li>
+                <li style="color: #003366; font-weight: 500;">Services</li>
+            </ol>
+        </div>
+    </nav>
 
     <!-- Hero Banner with CTA -->
     <section class="hero-banner" style="background: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 51, 102, 0.95)), url('images/notary-bg.jpg'); background-size: cover; background-position: center; padding: 5rem 0; color: white; text-align: center;">
